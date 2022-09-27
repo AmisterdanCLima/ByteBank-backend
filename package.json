@@ -1,0 +1,12 @@
+{
+  "name": "banco-meu-projeto",
+  "version": "3.0.0",
+  "description": "Novamente tentando essa merda",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amisterdan",
+  "license": "ISC",
+  "type": "module"
+}
