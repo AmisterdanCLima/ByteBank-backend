@@ -13,3 +13,4 @@ contaAmisterdan.transferencia(300,contaEdilania);
 
 console.log(cliente01);
 console.log(contaAmisterdan);
+console.log(contaEdilania);
