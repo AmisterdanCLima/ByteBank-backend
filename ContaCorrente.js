@@ -1,13 +1,11 @@
 import { Cliente } from "./Cliente.js";
 export class ContaCorrente{
     static numeroDeContas = 0;
-    _agencia;
-    _cliente;
-    _saldo = 0;
-
+    
     constructor(agencia,cliente){
         this._agencia = agencia;
         this._cliente = cliente;
+        this._saldo = 0;
         // Caso queira saber o número de Contas correntes, ela começa com 0 e vai sendo agregado 01 ca cada cliente anexado.
         ContaCorrente.numeroDeContas += 1
     }
@@ -29,7 +27,7 @@ export class ContaCorrente{
         return this._cliente;
     }
 
-    get _saldo(){
+    get saldo(){
         return this._saldo
     }
 
