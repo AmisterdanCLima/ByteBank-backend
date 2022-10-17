@@ -35,18 +35,17 @@ export class Conta {
 
     sacar(novoSaque) {
         let taxa = 1;
+        return this._sacar(novoSaque, taxa);
+    }
 
-        if (this._tipo == "corrente") {
-            taxa = 1.1
-        }
-
+    _sacar(novoSaque, taxa) {
         const valorSacado = taxa * novoSaque;
-
         //Lógica do if: Se o valor do Saldo for maior ou igual o valor do Novo Saque, aplicar o método Sarcar
         if (this._saldo >= valorSacado) {
             this._saldo -= valorSacado;
             return valorSacado;
         }
+        return 0;
     }
 
     transferencia(valorTransferencia, conta) {

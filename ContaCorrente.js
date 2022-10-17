@@ -1,4 +1,3 @@
-import { Cliente } from "./Cliente.js";
 import { Conta } from "./Conta.js";
 
 export class ContaCorrente extends Conta {
@@ -8,4 +7,11 @@ export class ContaCorrente extends Conta {
         super(0, cliente, agencia);
         ContaCorrente.numeroDeContas += 1
     }
+
+    //está sobrescrevendo o método sacar da class Conta
+    sacar(novoSaque) {
+        let taxa = 1.1;
+        return this._sacar(novoSaque, taxa);
+       
+    }    
 }
